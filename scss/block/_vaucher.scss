@@ -32,6 +32,10 @@
         p{
             font-size: 24px;
         }
+        @media(max-width: 600px){
+            display: flex;
+            gap: 10px;
+        }
     }
     &__info{
         display: flex;
