@@ -1,0 +1,242 @@
+.content{
+    &__box{
+        margin-top: 100px;
+        display: flex;
+        gap: 30px;
+        flex-direction: row;
+        @media(max-width: 1100px){
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+    }
+    &__img{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 60%;
+        gap: 20px;
+        @media(max-width: 1100px){
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+    .big__img{
+        height: 650px;
+        background: rgba(245, 245, 245, 1);
+        img{
+        width: 100%;
+        height: 100%;
+        }
+        @media(max-width: 1100px){
+            height: 300px;
+        }
+    }
+    .little__img{
+        display: flex;
+        height: 500px;
+        flex-direction: column;
+        img{
+            background: rgba(245, 245, 245, 1);
+        }
+        @media(max-width:1100px){
+            display: flex;
+            flex-direction: row;
+            height: 100px;
+            gap: 10px;
+        }
+    }
+    &__data{
+        margin-bottom: 20px;
+    }
+    &__info{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 1100px){
+            width: 100%;
+        }
+    }
+    &__review{
+        display: flex;
+        align-items: center;
+        padding-bottom: 20px;
+        margin-top: 16px;
+    }
+    .rating{
+        color:rgba(66, 66, 66, 0.841);
+        font-weight: 600;
+        font-size: 14px;
+        margin-left: 20px;
+        @media(max-width: 450px){
+            margin-left: 5px;
+        }
+    }
+    .green{
+        color: rgba(0, 255, 102, 1);
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .stick{
+        color: rgba(66, 66, 66, 0.841);
+        font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .price{
+        color:rgba(66, 66, 66, 0.841) ;
+        font-size: 26px;
+    }
+    &__presentation{
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        margin-top: 20px;
+        color: black;
+    }
+    &__colours{
+        display: flex;
+        margin-top: 24px;
+        gap: 10px;
+        align-items: center;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    .red{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: $bg-sy;
+        border: 2px solid black;
+        transition: .4s;
+        &:hover{
+            border: 2px solid white;
+        }
+    }
+    .blue{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background:rgba(160, 188, 224, 1);
+        border: 2px solid black;
+        transition: .4s;
+        &:hover{
+            border: 2px solid white;
+        }
+    }
+    .size{
+        display: flex;
+        margin-top: 24px;
+        gap: 10px;
+        align-items: center;
+        p{
+            font-size: 20px;
+            font-weight: 400;
+        }
+        &__type{
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            border: 1px solid gainsboro;
+            background: transparent;
+            transition: .4s;
+            &:hover{
+                background: $bg-sy;
+                color: white;
+            }
+        }
+    }
+    &__shop{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        border-radius: 4px;
+    }
+    &__counter{
+        margin-top: 24px;
+    }
+    .symbol{
+        width: 30px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #ddd;
+        background: transparent;
+        transition: .4s;
+        border-radius: 3px;
+        &:hover{
+            background: $bg-sy;
+            color: white;
+        }    
+    }
+    .number{
+        width: 80px;
+        height: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        border: 1px solid #ddd;
+        background: transparent;
+    }
+    .now{
+        margin-top: 24px;
+        width: 100px;
+        height: 40px;
+        background: $bg-sy;
+        color: white;
+        border:none;
+        border-radius: 3px;
+        &:hover{
+            box-shadow: 0 0 20px 0 rgb(240, 204, 204);
+        }
+    }
+    .heart{
+        margin-top: 24px;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        background: transparent;
+        color:rgb(75, 74, 74);
+        border:1px solid gainsboro;
+        border-radius: 4px;
+        transition: .4s;
+        &:hover{
+            color: $bg-sy;
+        }
+    }
+    &__service{
+        width: 330px;
+        border-radius: 4px;
+        border: 1px solid rgb(169, 169, 169);
+        display: flex;
+        flex-direction: column; 
+        margin-top: 20px;
+    }
+    &__delivery{
+        display:flex;
+        gap: 16px;
+        align-items: center;
+        padding:20px;
+        // margin-top: 40px;
+    }
+    &__desc{
+        font-size: 12px;
+        color: #000000;
+        font-weight: 500;
+    }
+    &__card{
+        display: flex;
+        margin: 10px ;
+    }
+    .return{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    hr{
+        margin-top: 0;
+    }
+}

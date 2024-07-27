@@ -1,0 +1,112 @@
+.footer{
+     margin-top: 140px;
+    background: $bg-py;
+    &__wrapper{
+        display: flex;
+        gap: 50px;
+        padding-top: 40px;
+        i{
+            color: white;
+        }
+        b{
+            font-size: 22px;
+        }
+        @media(max-width: 1220px){
+            display: flex;
+            gap: 20px;
+        }
+        @media(max-width: 800px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__title{
+        @media(max-width: 800px){
+            font-size: 32px;
+        }
+    }
+    &__collection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    &__collection__second{
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 1100px){
+            display: none;
+        }
+    }
+    &__collection four{
+        display: flex;
+        flex-direction: column;
+    }
+    &__collection five{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    &__input{
+        width: 217px;
+        height: 48px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        margin-top: 10px;
+        i{
+            margin-left: 30px;
+            transition: .5s;
+            &:hover{
+            color:$bg-sy;
+        }
+        }
+        input{
+            border: none;
+            background: transparent;
+            color: #fff;
+            padding-left: 5px;        
+            outline: none;
+        }
+    }
+    &__icon{
+        display: flex;
+        gap: 30px;
+        margin-top: 30px;
+        i{
+            transition: .5s;
+            color: white;
+            &:hover{
+                color:$bg-sy;
+            }
+        }
+    }
+    &__item{
+        color: white;
+        transition: .5s;
+        &:hover{
+            color:$bg-sy;
+        }
+    }
+    &__title{
+        color: white;
+    }
+    &__save{
+        color: gainsboro;
+        margin-bottom: 20px;
+    }
+    &__logo{
+        display: flex;
+        gap: 20px;
+    }
+    &__bottom{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+}

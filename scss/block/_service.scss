@@ -1,0 +1,31 @@
+.service{
+    margin-top: 50px;
+    align-items: center;
+    &__wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        @media(max-width: 790px){
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &__card{
+        align-items: center;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+        @media(max-width:790px){
+            width: 100%;
+            box-shadow: 0 0 20px 0 gainsboro;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    }
+}

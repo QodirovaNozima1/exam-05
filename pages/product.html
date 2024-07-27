@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product</title>
+</head>
+<body>
+    <section class="discount">
+        <div class="container">
+            <div class="discount__box">
+                <div class="discount__wrapper">
+                    <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!</p><a href="">Shop now</a>
+                </div>
+                <div class="langs">
+                    <select name="langs" id="langs">
+                        <option value="English">English</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Korea">Korea</option>
+                        <option value="Mongolia">Mongolia</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                        <img src="../assets/Logo (1).png" alt="">
+                </div>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><i class="fa-solid fa-delete-left fa-shake"></i></a></li>
+                        <li class="navbar__item"><a href="../index.html">Home</a></li>
+                        <li class="navbar__item"><a href="#">Contact</a></li>
+                        <li class="navbar__item"><a href="#">About</a></li>
+                        <li class="navbar__item"><a href="#">Sign in</a></li>
+                    </ul>
+                    <div class="navbar__box">
+                            <ul class="navbar__collection">
+                                <li class="navbar__item"><a href="#">Home</a></li>
+                                <li class="navbar__item"><a href="#">Contact</a></li>
+                                <li class="navbar__item"><a href="#">About</a></li>
+                                <li class="navbar__item"><a href="#">Sign in</a></li>
+                            </ul>
+                            <div class="search">
+                                <div class="navbar__input">
+                                    <input type="text" placeholder="what are you looking for?">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                    </div>
+                    <li  class="menu__btn" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container"> 
+        <div class="content">
+        </div>
+    </div>
+    <script src="../js/product.js"></script>
+</body>
+</html>
